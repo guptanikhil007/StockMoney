@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nikhilpc.stockmoney.ItemDetails"
+    android:background="#def4be81">
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/Sname"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/Scode"
+        android:layout_alignTop="@+id/Sname"
+        android:layout_alignStart="@+id/SRise" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/SPrice"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="10dp"
+        android:gravity="end"
+        android:layout_below="@+id/Sname"
+        android:layout_alignStart="@+id/Sname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/SRise"
+        android:gravity="clip_horizontal"
+        android:layout_alignTop="@+id/SPrice"
+        android:layout_toEndOf="@+id/Sname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/change"
+        android:layout_below="@+id/SRise"
+        android:layout_alignStart="@+id/SRise"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="% Change"
+        android:id="@+id/textView17"
+        android:layout_alignBottom="@+id/change"
+        android:layout_alignStart="@+id/textView18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView18"
+        android:text="INDEX"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/index"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignStart="@+id/change" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Last Updated"
+        android:id="@+id/textView20"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/SPrice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/updatedlast"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignStart="@+id/index" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagerise"
+        android:src="@drawable/rise"
+        android:layout_above="@+id/change"
+        android:layout_toEndOf="@+id/SPrice" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stock Details "
+        android:id="@+id/textView12"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fe7c7c"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
